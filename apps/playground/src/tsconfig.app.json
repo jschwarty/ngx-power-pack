@@ -1,0 +1,15 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../dist/out-tsc/apps/playground",
+    "module": "es2015"
+  },
+  "include": [
+    "**/*.ts",
+    "../../../libs/**/*.ts" // Needed to include all potential code playground should include
+    /* add all lazy-loaded libraries here: "../../../libs/my-lib/index.ts" */
+  ],
+  "exclude": [
+    "**/*.spec.ts"
+  ]
+}

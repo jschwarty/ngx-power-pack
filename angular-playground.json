@@ -1,0 +1,6 @@
+{
+  "sourceRoot": "../ngx-power-pack/libs",
+  "angularCli": {
+    "appName": "playground"
+  }
+}

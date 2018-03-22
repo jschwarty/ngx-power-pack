@@ -14,6 +14,10 @@
     {
       "project": "./tsconfig.spec.json",
       "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/playground/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
     }
   ],
   "test": {
@@ -22,6 +26,28 @@
     }
   },
   "apps": [
+    {
+      "name": "playground",
+      "root": "apps/playground/src",
+      "outDir": "dist/apps/playground",
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "tsconfig": "tsconfig.app.json",
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      },
+      "tags": []
+    },
+    {
+      "name": "ngx-let",
+      "root": "libs/ngx-let/src",
+      "test": "../../../test.js",
+      "appRoot": "",
+      "tags": []
+    },
     {
       "name": "$workspaceRoot",
       "root": ".",
